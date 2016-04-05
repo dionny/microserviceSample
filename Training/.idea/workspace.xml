@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="989e90b9-f7f5-4786-8c5a-86280292424a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Execution/src/main/java/com/microservices/execution/messaging/ClientServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Execution/src/main/java/com/microservices/execution/messaging/SimpleListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Execution/src/main/java/com/microservices/execution/model/TestCaseExecution.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_activemq_activemq_broker_5_12_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_activemq_activemq_client_5_12_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_activemq_activemq_openwire_legacy_5_12_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_geronimo_specs_geronimo_j2ee_management_1_1_spec_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_geronimo_specs_geronimo_jms_1_1_spec_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_fusesource_hawtbuf_hawtbuf_1_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jms_4_2_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_messaging_4_2_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_4_2_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Execution/build.gradle" afterPath="$PROJECT_DIR$/../Execution/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Execution/src/main/java/com/microservices/execution/ExecutionService.java" afterPath="$PROJECT_DIR$/../Execution/src/main/java/com/microservices/execution/ExecutionService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Execution/src/main/java/com/microservices/execution/TestApplication.java" afterPath="$PROJECT_DIR$/../Execution/src/main/java/com/microservices/execution/TestApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Execution/src/main/java/com/microservices/execution/dto/TestCase.java" afterPath="$PROJECT_DIR$/../Execution/src/main/java/com/microservices/execution/dto/TestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Execution/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/../Execution/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Generation/build.gradle" afterPath="$PROJECT_DIR$/../Generation/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Scheduling/build.gradle" afterPath="$PROJECT_DIR$/../Scheduling/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Scheduling/src/test/java/com/microservices/execution/SchedulerIntegrationTests.java" afterPath="$PROJECT_DIR$/../Scheduling/src/test/java/com/microservices/execution/SchedulerIntegrationTests.java" />
     </list>
     <ignored path="Training.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -245,10 +225,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ExecutionService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ExecutionService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Execution/src/main/java/com/microservices/execution/ExecutionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25155926">
+            <state vertical-scroll-proportion="0.0">
               <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -262,6 +242,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SchedulerIntegrationTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../Scheduling/src/test/java/com/microservices/execution/SchedulerIntegrationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.46985447">
+              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -356,16 +348,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="execution.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Execution/execution.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -2076,7 +2058,6 @@
         <option value="$PROJECT_DIR$/../Execution/src/main/java/com/microservices/execution/model/TestCaseResult.java" />
         <option value="$PROJECT_DIR$/../Execution/src/main/java/com/microservices/execution/ExecutionController.java" />
         <option value="$PROJECT_DIR$/../Scheduling/src/main/java/com/microservices/scheduler/SchedulerService.java" />
-        <option value="$PROJECT_DIR$/../Scheduling/src/test/java/com/microservices/execution/SchedulerIntegrationTests.java" />
         <option value="$PROJECT_DIR$/../Scheduling/src/test/java/com/microservices/execution/dto/TestCaseResult.java" />
         <option value="$PROJECT_DIR$/../Scheduling/build.gradle" />
         <option value="$PROJECT_DIR$/../Execution/build.gradle" />
@@ -2091,6 +2072,7 @@
         <option value="$PROJECT_DIR$/../Execution/src/main/java/com/microservices/execution/messaging/SimpleListener.java" />
         <option value="$PROJECT_DIR$/../Execution/src/main/java/com/microservices/execution/TestApplication.java" />
         <option value="$PROJECT_DIR$/../Execution/src/main/java/com/microservices/execution/ExecutionService.java" />
+        <option value="$PROJECT_DIR$/../Scheduling/src/test/java/com/microservices/execution/SchedulerIntegrationTests.java" />
       </list>
     </option>
   </component>
@@ -2447,7 +2429,7 @@
       <recent name="$PROJECT_DIR$/../Scheduling/src/main/java/com/microservices/scheduler/dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Execution [bootRun]">
+  <component name="RunManager" selected="JUnit.SchedulerIntegrationTests.testExecutionFlow">
     <configuration default="false" name="Generation [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -2933,10 +2915,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.Execution [bootRun]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.Generation [bootRun]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.Scheduling [bootRun]" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.SchedulerIntegrationTests.testExecutionFlow" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SchedulerIntegrationTests.testExecutionFlow" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.Execution [bootRun]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.Generation [bootRun]" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.Scheduling [bootRun]" />
         <item index="4" class="java.lang.String" itemvalue="Gradle.Execution [build]" />
       </list>
     </recent_temporary>
@@ -2950,17 +2932,11 @@
       <updated>1459863869853</updated>
       <workItem from="1459863873310" duration="3099000" />
       <workItem from="1459868641595" duration="4032000" />
-      <workItem from="1459872701365" duration="7492000" />
+      <workItem from="1459872701365" duration="8344000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SchedulerIntegrationTests - 2016.04.05 at 10h 04m 06s.xml">
-      <configuration name="SchedulerIntegrationTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SchedulerIntegrationTests - 2016.04.05 at 10h 16m 41s.xml">
-      <configuration name="SchedulerIntegrationTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SchedulerIntegrationTests_testExecutionFlow - 2016.04.05 at 13h 02m 35s.xml">
       <configuration name="SchedulerIntegrationTests.testExecutionFlow" configurationId="JUnit" />
     </history-entry>
@@ -2976,13 +2952,28 @@
     <history-entry file="SchedulerIntegrationTests_testExecutionFlow - 2016.04.05 at 13h 23m 02s.xml">
       <configuration name="SchedulerIntegrationTests.testExecutionFlow" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SchedulerIntegrationTests_testExecutionFlow - 2016.04.05 at 14h 24m 54s.xml">
+      <configuration name="SchedulerIntegrationTests.testExecutionFlow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SchedulerIntegrationTests_testExecutionFlow - 2016.04.05 at 14h 25m 52s.xml">
+      <configuration name="SchedulerIntegrationTests.testExecutionFlow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SchedulerIntegrationTests_testExecutionFlow - 2016.04.05 at 14h 26m 10s.xml">
+      <configuration name="SchedulerIntegrationTests.testExecutionFlow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SchedulerIntegrationTests_testExecutionFlow - 2016.04.05 at 14h 26m 42s.xml">
+      <configuration name="SchedulerIntegrationTests.testExecutionFlow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SchedulerIntegrationTests_testExecutionFlow - 2016.04.05 at 14h 33m 53s.xml">
+      <configuration name="SchedulerIntegrationTests.testExecutionFlow" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14623000" />
+    <option name="totallyTimeSpent" value="15475000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2991,7 +2982,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3258278" sideWeight="0.34406295" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3258278" sideWeight="0.34406295" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22603719" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -3383,16 +3374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Scheduling/src/test/java/com/microservices/execution/SchedulerIntegrationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Scheduling/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.148148">
@@ -3523,8 +3504,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Execution/src/main/java/com/microservices/execution/ExecutionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25155926">
+        <state vertical-scroll-proportion="0.0">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Scheduling/src/test/java/com/microservices/execution/SchedulerIntegrationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46985447">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

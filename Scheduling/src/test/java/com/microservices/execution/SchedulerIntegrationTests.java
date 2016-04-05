@@ -21,9 +21,14 @@ public class SchedulerIntegrationTests {
     }
 
 	@Test
-	public void testExecutionFlow() {
+	public void testExecutionFlow() throws InterruptedException {
         ScheduledExecution scheduled =
                 service.scheduleExecution();
+
+        // TODO: Given what we know so far, have a few alternatives here.
+        // 1) Rather than an explicit delay, introduce an implicit delay.
+        // 2) Listen for test case execution completed events within a specified buffer.
+        Thread.sleep(5000);
 
         Execution execution = new RestTemplate().getForEntity(
                 scheduled.getHref(),
