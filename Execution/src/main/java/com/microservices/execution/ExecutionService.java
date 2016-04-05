@@ -4,7 +4,9 @@ import com.microservices.execution.clients.GenerationServiceClient;
 import com.microservices.execution.dto.GenerationCriteria;
 import com.microservices.execution.dto.GenerationRequest;
 import com.microservices.execution.dto.TestCase;
+import com.microservices.execution.messaging.ClientServiceImpl;
 import com.microservices.execution.model.Execution;
+import com.microservices.execution.model.TestCaseExecution;
 import com.microservices.execution.model.TestCaseResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,6 +24,9 @@ public class ExecutionService {
     @Autowired
     private GenerationServiceClient generationClient;
 
+    @Autowired
+    private ClientServiceImpl messageService;
+
     private List<Execution> currentExecutions;
 
     public ExecutionService() {
@@ -37,14 +42,25 @@ public class ExecutionService {
 
         // Execute.
         Execution execution = new Execution();
-        testCases.forEach(t -> executeTestCase(execution, t));
         currentExecutions.add(execution);
+
+        testCases.stream()
+                .map(t -> {
+                    TestCaseExecution testCaseExecution = new TestCaseExecution();
+                    testCaseExecution.setExecutionId(execution.getUuid());
+                    testCaseExecution.setTestCase(t);
+                    return testCaseExecution;
+                })
+                .forEach(tce -> messageService.addTestCaseExecutionRequest(tce));
 
         return execution;
     }
 
-    public void executeTestCase(Execution execution, TestCase testCase) {
-        execution.getTestCaseResults().add(new TestCaseResult(testCase.getUuid(), true));
+    public void executeTestCase(TestCaseExecution testCaseExecution) throws InterruptedException {
+        Thread.sleep(2000);
+        getExecution(testCaseExecution.getExecutionId())
+                .getTestCaseResults()
+                .add(new TestCaseResult(testCaseExecution.getTestCase().getUuid(), true));
     }
 
     public List<Execution> getExecutions() {

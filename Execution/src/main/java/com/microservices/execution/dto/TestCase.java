@@ -1,12 +1,13 @@
 package com.microservices.execution.dto;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.UUID;
 
 /**
  * Created by dionnys on 4/5/16.
  */
-public class TestCase {
+public class TestCase implements Serializable {
     private UUID uuid;
     private String modelId;
     private List<String> preconditions;
