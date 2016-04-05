@@ -1,4 +1,4 @@
-package com.microservices.scheduling.dto;
+package com.microservices.execution.dto;
 
 import java.util.List;
 

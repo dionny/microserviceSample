@@ -1,4 +1,4 @@
-package com.microservices.scheduling;
+package com.microservices.execution;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,6 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(com.microservices.generation.TestApplication.class, args);
+		SpringApplication.run(TestApplication.class, args);
 	}
 }

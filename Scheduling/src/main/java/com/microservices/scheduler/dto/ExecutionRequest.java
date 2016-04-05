@@ -1,7 +1,5 @@
 package com.microservices.scheduler.dto;
 
-import com.microservices.generation.model.TestCase;
-
 import java.util.List;
 
 /**

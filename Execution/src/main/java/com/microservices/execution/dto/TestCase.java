@@ -1,4 +1,4 @@
-package com.microservices.generation.model;
+package com.microservices.execution.dto;
 
 import java.util.List;
 import java.util.UUID;
@@ -11,10 +11,6 @@ public class TestCase {
     private String modelId;
     private List<String> preconditions;
     private List<String> actions;
-
-    public TestCase() {
-        this.uuid = UUID.randomUUID();
-    }
 
     public List<String> getPreconditions() {
         return preconditions;

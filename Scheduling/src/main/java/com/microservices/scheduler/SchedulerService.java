@@ -1,7 +1,7 @@
 package com.microservices.scheduler;
 
-import com.microservices.scheduler.dto.SchedulingResult;
-import com.microservices.scheduling.ExecutionService;
+import com.microservices.scheduler.clients.ExecutionServiceClient;
+import com.microservices.scheduler.dto.ScheduledExecution;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,17 +12,16 @@ import org.springframework.stereotype.Service;
 public class SchedulerService {
 
     @Autowired
-    private ExecutionService executionService;
+    private ExecutionServiceClient executionClient;
 
     public SchedulerService() {
     }
 
-    public SchedulerService(ExecutionService executionService) {
-        this.executionService = executionService;
+    public SchedulerService(ExecutionServiceClient client) {
+        this.executionClient = client;
     }
 
-    public SchedulingResult scheduleTestCases() {
-        executionService.beginTestExecution();
-        return new SchedulingResult(true);
+    public ScheduledExecution scheduleExecution() {
+        return executionClient.beginExecution();
     }
 }

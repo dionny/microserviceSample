@@ -5,7 +5,7 @@ package com.microservices.generation.dto;
  */
 public class GenerationRequest {
     private String modelId;
-    private com.microservices.scheduling.dto.GenerationCriteria criteria;
+    private GenerationCriteria criteria;
 
     public String getModelId() {
         return modelId;
@@ -15,11 +15,11 @@ public class GenerationRequest {
         this.modelId = modelId;
     }
 
-    public com.microservices.scheduling.dto.GenerationCriteria getCriteria() {
+    public GenerationCriteria getCriteria() {
         return criteria;
     }
 
-    public void setCriteria(com.microservices.scheduling.dto.GenerationCriteria criteria) {
+    public void setCriteria(GenerationCriteria criteria) {
         this.criteria = criteria;
     }
 }

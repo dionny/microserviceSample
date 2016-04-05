@@ -1,33 +1,20 @@
-package com.microservices.scheduling.model;
+package com.microservices.execution.model;
+
+import java.util.UUID;
 
 /**
  * Created by dionnys on 4/5/16.
  */
 public class TestCaseResult {
-    private String id;
-    private String testCaseId;
+    private UUID id;
+    private UUID testCaseId;
     private boolean success;
     private String message;
 
-    public TestCaseResult(String testCaseId, boolean success) {
+    public TestCaseResult(UUID testCaseId, boolean success) {
         this.testCaseId = testCaseId;
         this.success = success;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getTestCaseId() {
-        return testCaseId;
-    }
-
-    public void setTestCaseId(String testCaseId) {
-        this.testCaseId = testCaseId;
+        this.id = UUID.randomUUID();
     }
 
     public boolean isSuccess() {
@@ -44,5 +31,21 @@ public class TestCaseResult {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public UUID getTestCaseId() {
+        return testCaseId;
+    }
+
+    public void setTestCaseId(UUID testCaseId) {
+        this.testCaseId = testCaseId;
+    }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
     }
 }

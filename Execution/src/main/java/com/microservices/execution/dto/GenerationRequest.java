@@ -1,4 +1,4 @@
-package com.microservices.scheduling.dto;
+package com.microservices.execution.dto;
 
 /**
  * Created by dionnys on 4/5/16.
