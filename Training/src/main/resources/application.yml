@@ -1,0 +1,16 @@
+server:
+  port: 8716
+
+## EUREKA CONFIG ##
+eureka:
+  instance:
+    hostname: localhost
+  metadataMap:
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    server:
+      waitTimeInMsWhenSyncEmpty: 0
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

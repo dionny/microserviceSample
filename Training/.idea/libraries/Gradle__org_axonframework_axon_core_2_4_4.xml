@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.axonframework:axon-core:2.4.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.axonframework/axon-core/2.4.4/307dd69c2722a42e5cad285a7f556371664c4b70/axon-core-2.4.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.axonframework/axon-core/2.4.4/f3da9e9c64b1203f5f6a7c6f3a623e85500b6474/axon-core-2.4.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -30,6 +30,10 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile("org.springframework:spring-jms")
 	compile("org.apache.activemq:activemq-broker")
+	compile 'org.springframework.cloud:spring-cloud-starter-eureka-server:1.0.6.RELEASE'
+	compile 'org.springframework.hateoas:spring-hateoas:0.19.0.RELEASE'
+
+	compile 'org.axonframework:axon-core:2.4.4'
 
 	runtime('com.h2database:h2')
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
